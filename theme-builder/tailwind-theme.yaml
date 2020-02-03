@@ -14,8 +14,8 @@ palette:
   red: '#ff8383'
   blue: '#93ddfd'
   
-  gray_1000: '#0A101C'
-  gray_900: '#1A202C'
+  gray_10: '#111519'
+  gray_9: '#191D21'
   gray_800: '#2D3748'
   gray_700: '#4A5568'
   gray_600: '#718096'
@@ -124,8 +124,8 @@ ui:
   warning: rob_roy # squiggly underlines, find match errors etc.
   error: valencia # squiggly underlines, find match errors etc.
   borders: black # borders that separate the panels, sidebars, tabs etc.
-  background: gray_900 # editor, titlebar, and activity bar background
-  panels: gray_1000 # sidebar, terminal, inactive tabs etc.
+  background: gray_9 # editor, titlebar, and activity bar background
+  panels: gray_10 # sidebar, terminal, inactive tabs etc.
   text_subtle: gray_700 # line numbers, muted items
   text: gray_500
   text_active: gray_400 # active tab, active line number, active list text etc.
