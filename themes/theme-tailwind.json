@@ -155,21 +155,21 @@
         "support.function"
       ],
       "settings": {
-        "foreground": "#ED64A6"
+        "foreground": "#7F9CF5"
       }
     },
     {
       "name": "keywords",
       "scope": ["keyword", "punctuation.definition.keyword"],
       "settings": {
-        "foreground": "#FC8181"
+        "foreground": "#ff8383"
       }
     },
     {
       "name": "primitives",
       "scope": ["constant", "keyword.other", "support.type"],
       "settings": {
-        "foreground": "#38B2AC"
+        "foreground": "#93ddfd"
       }
     },
     {
@@ -183,21 +183,21 @@
       "name": "storage",
       "scope": ["storage", "support.class", "support.constant"],
       "settings": {
-        "foreground": "#4299E1"
+        "foreground": "#d9a9ff"
       }
     },
     {
       "name": "strings",
       "scope": ["string", "markup.inline"],
       "settings": {
-        "foreground": "#48BB78"
+        "foreground": "#b5f4a5"
       }
     },
     {
       "name": "tags",
       "scope": ["entity.name", "variable.language"],
       "settings": {
-        "foreground": "#7F9CF5"
+        "foreground": "#ffe484"
       }
     },
     {
