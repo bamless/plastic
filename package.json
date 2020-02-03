@@ -37,6 +37,11 @@
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
         "path": "./themes/theme-deprioritised-punctuation.json"
+      },
+      {
+        "label": "Plastic - Tailwind",
+        "uiTheme": "vs-dark",
+        "path": "./themes/theme-tailwind.json"
       }
     ]
   },

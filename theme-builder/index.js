@@ -10,6 +10,7 @@ const testTheme = require('./testTheme')
 const outDir = parseArgs(process.argv).outDir || './themes'
 
 const theme = readYaml('./theme-builder/theme.yaml')
+const tailwindTheme = readYaml('./theme-builder/tailwind-theme.yaml')
 
 // This will stop the process here if any tests fail.
 testTheme(theme)
@@ -24,3 +25,6 @@ fs.outputFile(
   `${outDir}/theme-deprioritised-punctuation.json`,
   deprioritisedTheme,
 )
+
+const twTheme = compileTheme(tailwindTheme, config)
+fs.outputFile(`${outDir}/theme-tailwind.json`, twTheme)
