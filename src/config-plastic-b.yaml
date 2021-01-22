@@ -1,5 +1,5 @@
 # Your theme's name must begin with Plastic, e.g. Plastic Horses
-name: Plastic Legacy v2
+name: Plastic B
 
 palette:
   dodger_blue: '#1085FF'
@@ -10,9 +10,10 @@ palette:
   cadet_blue_1A: '#A9B2C31A'
   cadet_blue_33: '#A9B2C333'
   cornflower_blue: '#61AFEF'
+  pale_blue: '#17E5E650'
   electric_violet: '#8B00FF'
   fountain_blue: '#56B6C2'
-  harvest_gold: '#E5C07B'
+  harvest_gold: '#FFCB70'
   iron: '#D4D7D9'
   lavender: '#B57EDC'
   olivine: '#98C379'
@@ -20,10 +21,11 @@ palette:
   shark: '#21252B'
   shuttle_gray: '#5F6672'
   sunglo: '#E06C75'
-  whiskey: '#D19A66'
+  whiskey: '#FFAB70'
   woodsmoke: '#181A1F'
   transparent: '#00000000'
   valencia: '#D74E42'
+  debug_red: '#931C06'
   white: '#ffffff'
 
 terminal:
@@ -58,6 +60,7 @@ default_syntax:
   # import, export, return etc.
   sunglo:
     - keyword
+    - punctuation.definition.directive # preprocessor hashes
     - punctuation.definition.keyword # css @ in @media queries
   # primitives
   fountain_blue:
@@ -69,14 +72,15 @@ default_syntax:
     - storage
     - support.class
     - support.constant
+    - variable.language # this
   # anything in quotes
   olivine:
     - string
+    - punctuation.definition.string
     - markup.inline
   # html tags
   harvest_gold:
     - entity.name
-    - variable.language # this
   # variables
   iron:
     - support.type.property-name
@@ -84,7 +88,7 @@ default_syntax:
     - variable
 
 normal_syntax:
-  # quotes, terminators etc.
+  # quotes, terminators etc.  
   cadet_blue:
     - meta.brace
     - punctuation
@@ -101,7 +105,6 @@ styles:
     - punctuation.definition.bold
     - entity.other.attribute-name.id # css ID
   italic:
-    - comment
     - markup.italic
     - punctuation.definition.italic
 
@@ -109,26 +112,19 @@ workbench:
   # green
   olivine:
     - gitDecoration.untrackedResourceForeground
-  # amber
-  whiskey:
+  # blue
+  cornflower_blue:
+    - debugConsole.infoForeground
     - gitDecoration.modifiedResourceForeground
-  # red. buttons, activity-bar badge
-  sunglo:
+  dodger_blue:
     - activityBarBadge.background
     - button.background
-    - gitDecoration.deletedResourceForeground
-  # find highlight, bracket match etc.
-  dodger_blue:
     - activityBar.activeBorder
-    - editor.findMatchBorder
     - editor.wordHighlightBorder
     - editor.wordHighlightStrongBorder
-    - editorBracketMatch.border
-    - editorHoverWidget.border
     - editorInfo.foreground
     - editorLightBulbAutoFix.foreground
     - editorOverviewRuler.infoForeground
-    - editorSuggestWidget.border
     - focusBorder
     - inputOption.activeBorder
     - inputValidation.infoBackground
@@ -145,6 +141,7 @@ workbench:
     - list.warningForeground
   # error. squiggly underlines, find match errors etc.
   valencia:
+    - gitDecoration.deletedResourceForeground
     - editorError.foreground
     - editorOverviewRuler.errorForeground
     - errorForeground
@@ -195,7 +192,6 @@ workbench:
     - peekViewResult.background
     - peekViewTitle.background
     - sideBar.background
-    - statusBar.debuggingBackground
     - statusBar.noFolderBackground
     - statusBarItem.hoverBackground
     - tab.inactiveBackground
@@ -207,15 +203,15 @@ workbench:
     - titleBar.inactiveForeground
   # text
   cadet_blue:
-    - editor.foreground
     - editorCursor.foreground
     - statusBar.foreground
     - terminal.foreground
-  # active tab, active line number, active list text etc. Search match borders
+  # braket matching
+  pale_blue:
+    - editorBracketMatch.background
+  # editor text, active tab, active line number, active list text etc. Search match borders
   iron:
-    - editor.findMatchHighlightBorder
-    - editor.rangeHighlightBorder
-    - editor.selectionHighlightBorder
+    - editor.foreground
     - editorActiveLineNumber.foreground
     - list.inactiveSelectionForeground
     - peekViewResult.selectionForeground
@@ -251,10 +247,13 @@ workbench:
     - editor.lineHighlightBorder
     - editor.wordHighlightBackground
     - editor.wordHighlightStrongBackground
-    - editorBracketMatch.background
     - scrollbar.shadow
     - widget.shadow
+  # debugging bar
+  debug_red:
+    - statusBar.debuggingBackground 
   # some active items and text, that just looks better as pure white
   white:
+    - statusBar.debuggingForeground
     - activityBar.foreground
     - activityBarBadge.foreground

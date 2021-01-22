@@ -72,15 +72,14 @@ function compile({ version, deprioritised = false }) {
 function build({ version }) {
   // Normal
   fs.outputFile(`./themes/${version}.json`, compile({ version }))
-  // Deprioritised
-  fs.outputFile(
-    `./themes/${version}-deprioritised-punctuation.json`,
-    compile({ version, deprioritised: true }),
-  )
+  // Deprioritised - disabled for now
+  // fs.outputFile(
+  //   `./themes/${version}-deprioritised-punctuation.json`,
+  //   compile({ version, deprioritised: true }),
+  // )
 }
 
 /**
  * Build versions
  */
-build({ version: 'v2' })
-build({ version: 'master' })
+build({ version: 'plastic-b' })

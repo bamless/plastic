@@ -1,5 +1,5 @@
 {
-  "name": "plastic",
+  "name": "Plastic",
   "displayName": "Plastic",
   "version": "4.3.1",
   "private": true,
@@ -26,24 +26,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Plastic",
+        "label": "Plastic B",
         "uiTheme": "vs-dark",
-        "path": "./themes/master.json"
-      },
-      {
-        "label": "Plastic - deprioritised punctuation",
-        "uiTheme": "vs-dark",
-        "path": "./themes/master-deprioritised-punctuation.json"
-      },
-      {
-        "label": "Plastic Legacy v2",
-        "uiTheme": "vs-dark",
-        "path": "./themes/v2.json"
-      },
-      {
-        "label": "Plastic Legacy v2 - deprioritised punctuation",
-        "uiTheme": "vs-dark",
-        "path": "./themes/v2-deprioritised-punctuation.json"
+        "path": "./themes/plastic-b.json"
       }
     ]
   },

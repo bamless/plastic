@@ -1,5 +1,5 @@
 {
-  "name": "Plastic Legacy v2",
+  "name": "Plastic B",
   "colors": {
     "terminal.ansiBlack": "#21252B",
     "terminal.ansiBlue": "#61AFEF",
@@ -7,7 +7,7 @@
     "terminal.ansiGreen": "#98C379",
     "terminal.ansiMagenta": "#B57EDC",
     "terminal.ansiRed": "#E06C75",
-    "terminal.ansiYellow": "#D19A66",
+    "terminal.ansiYellow": "#FFAB70",
     "terminal.ansiWhite": "#A9B2C3",
     "terminal.ansiBrightBlack": "#5F6672",
     "terminal.ansiBrightBlue": "#1085FF",
@@ -18,20 +18,16 @@
     "terminal.ansiBrightYellow": "#E9D16C",
     "terminal.ansiBrightWhite": "#D4D7D9",
     "gitDecoration.untrackedResourceForeground": "#98C379",
-    "gitDecoration.modifiedResourceForeground": "#D19A66",
-    "activityBarBadge.background": "#E06C75",
-    "button.background": "#E06C75",
-    "gitDecoration.deletedResourceForeground": "#E06C75",
+    "debugConsole.infoForeground": "#61AFEF",
+    "gitDecoration.modifiedResourceForeground": "#61AFEF",
+    "activityBarBadge.background": "#1085FF",
+    "button.background": "#1085FF",
     "activityBar.activeBorder": "#1085FF",
-    "editor.findMatchBorder": "#1085FF",
     "editor.wordHighlightBorder": "#1085FF",
     "editor.wordHighlightStrongBorder": "#1085FF",
-    "editorBracketMatch.border": "#1085FF",
-    "editorHoverWidget.border": "#1085FF",
     "editorInfo.foreground": "#1085FF",
     "editorLightBulbAutoFix.foreground": "#1085FF",
     "editorOverviewRuler.infoForeground": "#1085FF",
-    "editorSuggestWidget.border": "#1085FF",
     "focusBorder": "#1085FF",
     "inputOption.activeBorder": "#1085FF",
     "inputValidation.infoBackground": "#1085FF",
@@ -44,6 +40,7 @@
     "inputValidation.warningBackground": "#E9D16C",
     "inputValidation.warningBorder": "#E9D16C",
     "list.warningForeground": "#E9D16C",
+    "gitDecoration.deletedResourceForeground": "#D74E42",
     "editorError.foreground": "#D74E42",
     "editorOverviewRuler.errorForeground": "#D74E42",
     "errorForeground": "#D74E42",
@@ -88,7 +85,6 @@
     "peekViewResult.background": "#181A1F",
     "peekViewTitle.background": "#181A1F",
     "sideBar.background": "#181A1F",
-    "statusBar.debuggingBackground": "#181A1F",
     "statusBar.noFolderBackground": "#181A1F",
     "statusBarItem.hoverBackground": "#181A1F",
     "tab.inactiveBackground": "#181A1F",
@@ -96,13 +92,11 @@
     "editorLineNumber.foreground": "#5F6672",
     "tab.inactiveForeground": "#5F6672",
     "titleBar.inactiveForeground": "#5F6672",
-    "editor.foreground": "#A9B2C3",
     "editorCursor.foreground": "#A9B2C3",
     "statusBar.foreground": "#A9B2C3",
     "terminal.foreground": "#A9B2C3",
-    "editor.findMatchHighlightBorder": "#D4D7D9",
-    "editor.rangeHighlightBorder": "#D4D7D9",
-    "editor.selectionHighlightBorder": "#D4D7D9",
+    "editorBracketMatch.background": "#17E5E650",
+    "editor.foreground": "#D4D7D9",
     "editorActiveLineNumber.foreground": "#D4D7D9",
     "list.inactiveSelectionForeground": "#D4D7D9",
     "peekViewResult.selectionForeground": "#D4D7D9",
@@ -132,9 +126,10 @@
     "editor.lineHighlightBorder": "#00000000",
     "editor.wordHighlightBackground": "#00000000",
     "editor.wordHighlightStrongBackground": "#00000000",
-    "editorBracketMatch.background": "#00000000",
     "scrollbar.shadow": "#00000000",
     "widget.shadow": "#00000000",
+    "statusBar.debuggingBackground": "#931C06",
+    "statusBar.debuggingForeground": "#ffffff",
     "activityBar.foreground": "#ffffff",
     "activityBarBadge.foreground": "#ffffff"
   },
@@ -153,11 +148,15 @@
         "punctuation.definition.entity"
       ],
       "settings": {
-        "foreground": "#D19A66"
+        "foreground": "#FFAB70"
       }
     },
     {
-      "scope": ["keyword", "punctuation.definition.keyword"],
+      "scope": [
+        "keyword",
+        "punctuation.definition.directive",
+        "punctuation.definition.keyword"
+      ],
       "settings": {
         "foreground": "#E06C75"
       }
@@ -169,21 +168,26 @@
       }
     },
     {
-      "scope": ["storage", "support.class", "support.constant"],
+      "scope": [
+        "storage",
+        "support.class",
+        "support.constant",
+        "variable.language"
+      ],
       "settings": {
         "foreground": "#61AFEF"
       }
     },
     {
-      "scope": ["string", "markup.inline"],
+      "scope": ["string", "punctuation.definition.string", "markup.inline"],
       "settings": {
         "foreground": "#98C379"
       }
     },
     {
-      "scope": ["entity.name", "variable.language"],
+      "scope": ["entity.name"],
       "settings": {
-        "foreground": "#E5C07B"
+        "foreground": "#FFCB70"
       }
     },
     {
@@ -211,7 +215,7 @@
     },
     {
       "name": "italic",
-      "scope": ["comment", "markup.italic", "punctuation.definition.italic"],
+      "scope": ["markup.italic", "punctuation.definition.italic"],
       "settings": {
         "fontStyle": "italic"
       }
